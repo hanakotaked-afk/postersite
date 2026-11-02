@@ -1,0 +1,49 @@
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:#fff;color:#222;font-family:"Noto Sans JP",sans-serif}
+.page{min-height:100vh;display:flex;flex-direction:column}
+.wrap{width:100%;max-width:1244px;margin:0 auto}
+
+/* header band */
+.band{background:#333;color:#fff;padding:40px 24px 32px}
+.band .meta{margin:0 0 20px;font-size:14px;line-height:1.6}
+.band h1{margin:0;font-size:28px;line-height:1.4;font-weight:700}
+.work-band{padding:24px 24px 32px}
+
+/* nav links */
+a.nav{display:inline-block;color:#fff;text-decoration:none;font-size:15px;padding:12px 4px;min-height:20px}
+a.nav:hover{text-decoration:underline}
+a.nav:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.work-band a.nav{margin-bottom:12px}
+
+/* top page text */
+.intro{padding:20px 24px 28px;display:flex;flex-direction:column;gap:24px;font-size:16px;line-height:1.8}
+.intro h2{margin:0;font-size:16px;font-weight:400}
+.intro p{margin:0}
+
+/* thumbnails */
+.thumbs-area{background:#333;flex-grow:1;padding-bottom:140px}
+.thumbs{max-width:1250px;margin:0 auto;display:flex;flex-wrap:wrap}
+a.thumb{display:block;position:relative;overflow:hidden;flex:1 1 160px;min-width:0}
+a.thumb img{display:block;width:100%;height:auto}
+a.thumb img.over{position:absolute;top:0;left:0;height:100%;opacity:0;transition:opacity .35s ease}
+a.thumb:hover img.over,a.thumb:focus-visible img.over{opacity:1}
+a.thumb:focus-visible{outline:3px solid #fff;outline-offset:-6px}
+
+/* work pages */
+.work{padding:48px 24px 16px;display:flex;flex-wrap:wrap;gap:64px 80px;align-items:flex-start;font-size:15px;line-height:1.9}
+.work section{min-width:0}
+.work .col-ref{flex:1 1 300px}
+.work .col-orig{flex:2 1 560px}
+.work h2{margin:0 0 20px;font-size:18px;font-weight:700}
+.work img{display:block;width:100%;height:auto}
+.work .col-orig img{max-width:700px}
+.work ul{margin:28px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:16px}
+.work p.note{margin:28px 0 0}
+.conclusion{flex:1 1 100%;border-top:1px solid #ccc;padding-top:40px;max-width:880px;font-size:16px}
+.conclusion h2{font-size:20px}
+.conclusion p{margin:0 0 20px}
+.conclusion p.lead{margin:0;font-weight:700}
+
+/* footer */
+.foot{background:#333;flex-grow:1;margin-top:48px}
+.foot .wrap{padding:20px 24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
